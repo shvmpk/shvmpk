@@ -4,9 +4,11 @@
 
 ###
 
-<h1 align="center">Hey 👋What's Up?</h1>
+<h1 align="center">Hey 👋 What's Up?</h1>
 
 ###
+
+<h3 align="center">🛠️ Tech Stack</h3>
 
 <div align="center">
   <img src="https://skillicons.dev/icons?i=py" height="42" alt="python logo"  />
@@ -44,7 +46,23 @@
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" height="42" alt="redis logo"  />
 </div>
 
-###
+<h3 align="center">⚡ About Me</h3>
+
+<div align="center">
+
+| 👨‍💻 Role | Software Engineer |
+|---|---|
+| 🔭 Interests | FOSS & Productivity Tools |
+| 🏗️ Currently Building | Production-grade systems & scalable backends |
+| 🌐 Loves | Full Stack Dev — React, Next.js, Spring Boot, Node.js |
+| ☁️ Into | Cloud, Containers & DevOps (AWS, Docker, K8s) |
+| 📚 Always | Learning New Technologies |
+| 🌅 Productivity Peak | Early Bird — mornings are for shipping code |
+| ⛩️ Downtime | Watching Anime |
+
+</div>
+
+<h3 align="center">🔗 Connect With Me</h3>
 
 <div align="center">
   <a href="https://www.linkedin.com/in/shvmpk/" target="_blank">
@@ -53,6 +71,8 @@
 </div>
 
 ###
+
+<h3 align="center">📊 GitHub Stats</h3>
 
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api/top-langs?username=shvmpk&locale=en&hide_title=true&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=true&order=2" height="150" alt="languages graph"  />
@@ -67,5 +87,6 @@
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/shvmpk/shvmpk/output/pacman-contribution-graph.svg">
   <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/shvmpk/shvmpk/output/pacman-contribution-graph.svg">
 </picture>
+
 
 ###
