@@ -13,9 +13,9 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 """
-
 import requests
 import json
+import os
 import sys
 import re
 from time import sleep
@@ -24,59 +24,72 @@ from dataclasses import dataclass
 from typing import Optional
 
 # --- Tunables ---
-MAX_RETRIES = 3
-INITIAL_CWND = 1
-INITIAL_SSTHRESH = 20
-INACTIVITY_THRESHOLD = 5          # min contributions/year to count as "active"
-NOTABLE_FOLLOWER_THRESHOLD = 500  # marks skipped-but-notable users with *
-TABLE_MAX_ENTRIES = 21
-TABLE_COLUMNS = 7
-MAX_FOLLOWERS_TO_SCAN = None      # set an int to cap pagination, or leave None for unlimited
+# All of these can be overridden via environment variables of the same name,
+# so you can adjust strictness from the GitHub Actions workflow without
+# touching this file.
+MAX_RETRIES = int(os.environ.get("MAX_RETRIES", 3))
+INITIAL_CWND = int(os.environ.get("INITIAL_CWND", 1))
+INITIAL_SSTHRESH = int(os.environ.get("INITIAL_SSTHRESH", 20))
+INACTIVITY_THRESHOLD = int(os.environ.get("INACTIVITY_THRESHOLD", 5))          # min contributions/year to count as "active"
+NOTABLE_FOLLOWER_THRESHOLD = int(os.environ.get("NOTABLE_FOLLOWER_THRESHOLD", 500))  # marks skipped-but-notable users with *
+TABLE_MAX_ENTRIES = int(os.environ.get("TABLE_MAX_ENTRIES", 21))
+TABLE_COLUMNS = int(os.environ.get("TABLE_COLUMNS", 7))
+MAX_FOLLOWERS_TO_SCAN = os.environ.get("MAX_FOLLOWERS_TO_SCAN")
+MAX_FOLLOWERS_TO_SCAN = int(MAX_FOLLOWERS_TO_SCAN) if MAX_FOLLOWERS_TO_SCAN else None
+
+# Quota formula: quota = follower_count * QUOTA_BASE_MULTIPLIER + star bonuses.
+# Raising QUOTA_BASE_MULTIPLIER gives modest accounts (few/no starred repos)
+# more room before being flagged as follow-spam. 1 = original strict behavior.
+QUOTA_BASE_MULTIPLIER = float(os.environ.get("QUOTA_BASE_MULTIPLIER", 3))
+# Max following:follower ratio allowed regardless of stars/quota — a hard
+# backstop against obvious bot accounts (e.g. 190,000 following, 18,000 followers).
+MAX_FOLLOW_RATIO = float(os.environ.get("MAX_FOLLOW_RATIO", 15))
+
 
 QUERY_TEMPLATE = '''
-query($login: String!, $pageSize: Int!, $cursor: String) {
-    user(login: $login) {
-        followers(first: $pageSize, after: $cursor) {
-            pageInfo {
+query($login: String!, $pageSize: Int!, $cursor: String) {{
+    user(login: $login) {{
+        followers(first: $pageSize, after: $cursor) {{
+            pageInfo {{
                 endCursor
                 hasNextPage
-            }
-            nodes {
+            }}
+            nodes {{
                 login
                 name
                 databaseId
-                following {
+                following {{
                     totalCount
-                }
-                followers {
+                }}
+                followers {{
                     totalCount
-                }
+                }}
                 repositories(
                     first: 20,
-                    orderBy: { field: STARGAZERS, direction: DESC },
-                ) {
-                    nodes {
+                    orderBy: {{ field: STARGAZERS, direction: DESC }},
+                ) {{
+                    nodes {{
                         stargazerCount
-                    }
-                }
+                    }}
+                }}
                 repositoriesContributedTo(
                     first: 50,
                     contributionTypes: [COMMIT],
-                    orderBy: { field: STARGAZERS, direction: DESC },
-                ) {
-                    nodes {
+                    orderBy: {{ field: STARGAZERS, direction: DESC }},
+                ) {{
+                    nodes {{
                         stargazerCount
-                    }
-                }
-                contributionsCollection {
-                    contributionCalendar {
+                    }}
+                }}
+                contributionsCollection {{
+                    contributionCalendar {{
                         totalContributions
-                    }
-                }
-            }
-        }
-    }
-}
+                    }}
+                }}
+            }}
+        }}
+    }}
+}}
 '''
 
 
@@ -134,10 +147,10 @@ def run_query(handle: str, page_size: int, cursor: Optional[str], headers: dict)
     return body
 
 
-def compute_quota(follower_count: int, repo_stars: list, contrib_stars: list) -> int:
+def compute_quota(follower_count: int, repo_stars: list, contrib_stars: list) -> float:
     """Heuristic cap on how many people someone is 'allowed' to follow
     before we consider it follow-for-follow spam."""
-    quota = follower_count
+    quota = follower_count * QUOTA_BASE_MULTIPLIER
     for i, star_count in enumerate(repo_stars):
         if star_count <= i:
             break
@@ -217,8 +230,9 @@ def fetch_followers(handle: str, headers: dict, log) -> list:
                     r["stargazerCount"] for r in follower["repositoriesContributedTo"]["nodes"]
                 ]
                 quota = compute_quota(follower_count, repo_stars, contrib_stars)
+                ratio_too_high = follower_count > 0 and (following / follower_count) > MAX_FOLLOW_RATIO
 
-                if following > quota:
+                if following > quota or ratio_too_high:
                     log(
                         f"Skipped{'*' if notable else ''} (quota): "
                         f"https://github.com/{login} with {follower_count} followers "
