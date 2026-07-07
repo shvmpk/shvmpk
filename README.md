@@ -80,6 +80,20 @@
       <a href="https://github.com/rahman-O">Abdalrahman M.Mohhy</a>
     </td>
     <td align="center">
+      <a href="https://github.com/David-Horjet">
+        <img src="https://avatars2.githubusercontent.com/u/93748510" width="100px;" alt="David-Horjet"/>
+      </a>
+      <br />
+      <a href="https://github.com/David-Horjet">David Horjet</a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/johnny-rice">
+        <img src="https://avatars2.githubusercontent.com/u/718718" width="100px;" alt="johnny-rice"/>
+      </a>
+      <br />
+      <a href="https://github.com/johnny-rice">Johnny Rice</a>
+    </td>
+    <td align="center">
       <a href="https://github.com/Ryuk-me">
         <img src="https://avatars2.githubusercontent.com/u/55330971" width="100px;" alt="Ryuk-me"/>
       </a>
@@ -94,6 +108,22 @@
       <a href="https://github.com/samrahimi">Sam Rahimi</a>
     </td>
     <td align="center">
+      <a href="https://github.com/AbdoXCode">
+        <img src="https://avatars2.githubusercontent.com/u/195650454" width="100px;" alt="AbdoXCode"/>
+      </a>
+      <br />
+      <a href="https://github.com/AbdoXCode">Abdelrhman Ayman</a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/decoder-17">
+        <img src="https://avatars2.githubusercontent.com/u/54593072" width="100px;" alt="decoder-17"/>
+      </a>
+      <br />
+      <a href="https://github.com/decoder-17">Tanupam Saha</a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
       <a href="https://github.com/rj-rishav">
         <img src="https://avatars2.githubusercontent.com/u/58115693" width="100px;" alt="rj-rishav"/>
       </a>
@@ -106,6 +136,20 @@
       </a>
       <br />
       <a href="https://github.com/Brigoliboon">Brigoliboon</a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/sagarscaminosoftai">
+        <img src="https://avatars2.githubusercontent.com/u/125298459" width="100px;" alt="sagarscaminosoftai"/>
+      </a>
+      <br />
+      <a href="https://github.com/sagarscaminosoftai">sagar sharma</a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/gsiddhi04">
+        <img src="https://avatars2.githubusercontent.com/u/155354417" width="100px;" alt="gsiddhi04"/>
+      </a>
+      <br />
+      <a href="https://github.com/gsiddhi04">gsiddhi04</a>
     </td>
   </tr>
 </table>
