@@ -1,6 +1,7 @@
 """Fetch top GitHub followers via GraphQL and update the profile README with a ranked table.
 
 Filters out inactive, follow-spam, and high-ratio accounts using configurable heuristics.
+Ranks surviving followers by a blended score of stars + followers + follow ratio.
 Intended to be run as a scheduled GitHub Actions workflow.
 """
 
@@ -46,10 +47,23 @@ MAX_FOLLOWERS_TO_SCAN = int(MAX_FOLLOWERS_TO_SCAN) if MAX_FOLLOWERS_TO_SCAN else
 # Quota formula: quota = follower_count * QUOTA_BASE_MULTIPLIER + star bonuses.
 # Raising QUOTA_BASE_MULTIPLIER gives modest accounts (few/no starred repos)
 # more room before being flagged as follow-spam. 1 = original strict behavior.
-QUOTA_BASE_MULTIPLIER = float(os.environ.get("QUOTA_BASE_MULTIPLIER", 3))
+# Default raised from 3 -> 6 since small accounts (few followers) don't need
+# aggressive spam-defense the way large accounts do.
+QUOTA_BASE_MULTIPLIER = float(os.environ.get("QUOTA_BASE_MULTIPLIER", 6))
 # Max following:follower ratio allowed regardless of stars/quota — a hard
 # backstop against obvious bot accounts (e.g. 190,000 following, 18,000 followers).
-MAX_FOLLOW_RATIO = float(os.environ.get("MAX_FOLLOW_RATIO", 15))
+# Default raised from 15 -> 30 for the same reason.
+MAX_FOLLOW_RATIO = float(os.environ.get("MAX_FOLLOW_RATIO", 30))
+
+# --- Ranking weights ---
+# Final score = follower_count
+#             + STAR_WEIGHT * best_repo_stars
+#             - RATIO_PENALTY_WEIGHT * (following / max(follower_count, 1))
+# Higher STAR_WEIGHT -> people with a popular starred repo rank higher.
+# Higher RATIO_PENALTY_WEIGHT -> people who follow way more than they're
+# followed back rank lower, even if not filtered out entirely.
+STAR_WEIGHT = float(os.environ.get("STAR_WEIGHT", 2.0))
+RATIO_PENALTY_WEIGHT = float(os.environ.get("RATIO_PENALTY_WEIGHT", 1.0))
 
 
 QUERY_TEMPLATE = '''
@@ -101,6 +115,9 @@ query($login: String!, $pageSize: Int!, $cursor: String) {
 
 @dataclass(frozen=True, order=True)
 class Follower:
+    # `score` is listed first so dataclass(order=True) sorts on it primarily;
+    # follower_count is the tiebreaker, login keeps ties deterministic.
+    score: float
     follower_count: int
     login: str
     user_id: int
@@ -166,6 +183,14 @@ def compute_quota(follower_count: int, repo_stars: list, contrib_stars: list) ->
             break
         quota += i * 5
     return quota
+
+
+def compute_score(follower_count: int, following: int, repo_stars: list, contrib_stars: list) -> float:
+    """Blended ranking score: rewards followers and starred repos,
+    lightly penalizes a high following:follower ratio."""
+    best_stars = max(repo_stars + contrib_stars, default=0)
+    ratio_penalty = RATIO_PENALTY_WEIGHT * (following / max(follower_count, 1))
+    return follower_count + STAR_WEIGHT * best_stars - ratio_penalty
 
 
 def fetch_followers(handle: str, headers: dict, log) -> list:
@@ -246,9 +271,10 @@ def fetch_followers(handle: str, headers: dict, log) -> list:
                     )
                     continue
 
-                entry = Follower(follower_count, login, user_id, name)
+                score = compute_score(follower_count, following, repo_stars, contrib_stars)
+                entry = Follower(score, follower_count, login, user_id, name)
                 followers.append(entry)
-                log(str(entry))
+                log(f"{entry} (score={score:.1f})")
         except (TypeError, KeyError) as e:
             parse_retries += 1
             if parse_retries > MAX_RETRIES:
