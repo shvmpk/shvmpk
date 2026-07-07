@@ -72,6 +72,85 @@
 
 <!-- PINNED-REPOS:START -->
 
+<table>
+<tr>
+<td width="50%">
+<a href="https://github.com/shvmpk/url-shortener"><b>📌 shvmpk/url-shortener</b></a>
+<br/>
+An advanced, production-grade URL shortening service built for internet-scale systems. Designed with scalability, observability, and extensibility in mind — yet still under active development with new features being added regularly.
+
+<br/>
+🛠 Java &nbsp;&nbsp;⭐ 0 &nbsp;&nbsp; 🍴 0
+</td>
+<td width="50%">
+<a href="https://github.com/shvmpk/linkedin-ai-composer"><b>📌 shvmpk/linkedin-ai-composer</b></a>
+<br/>
+A privacy-first Chrome extension that generates LinkedIn posts in your own voice using your own AI provider — cloud or local. No backend, no subscription, no data leaves your browser
+<br/>
+![ai](https://img.shields.io/badge/-ai-333333?style=flat-square) ![anthropic](https://img.shields.io/badge/-anthropic-333333?style=flat-square) ![chrome-extension](https://img.shields.io/badge/-chrome-extension-333333?style=flat-square) ![content-generation](https://img.shields.io/badge/-content-generation-333333?style=flat-square) ![gemini](https://img.shields.io/badge/-gemini-333333?style=flat-square) ![huggingface](https://img.shields.io/badge/-huggingface-333333?style=flat-square)
+
+<br/>
+🛠 JavaScript &nbsp;&nbsp;⭐ 0 &nbsp;&nbsp; 🍴 0
+</td>
+</tr>
+<tr>
+<td width="50%">
+<a href="https://github.com/shvmpk/github-contributor-bot"><b>📌 shvmpk/github-contributor-bot</b></a>
+<br/>
+🤖 A high-performance, zero-dependency Go-based bot that fully automates a realistic GitHub commits with human-like behavior — random times, realistic messages, rest days, sprint days, and branch simulations. Runs fully automated via GitHub Actions. No Node.js or Python required.
+<br/>
+![activity](https://img.shields.io/badge/-activity-333333?style=flat-square) ![automation](https://img.shields.io/badge/-automation-333333?style=flat-square) ![bot](https://img.shields.io/badge/-bot-333333?style=flat-square) ![cron](https://img.shields.io/badge/-cron-333333?style=flat-square) ![generator](https://img.shields.io/badge/-generator-333333?style=flat-square) ![git](https://img.shields.io/badge/-git-333333?style=flat-square)
+
+<br/>
+🛠 Go &nbsp;&nbsp;⭐ 1 &nbsp;&nbsp; 🍴 0
+</td>
+<td width="50%">
+<a href="https://github.com/shvmpk/spring-ai-local-rag"><b>📌 shvmpk/spring-ai-local-rag</b></a>
+<br/>
+Document Search & Insights Platform (Local AI Chat + Document ETL + Model Management Platform)
+<br/>
+![document](https://img.shields.io/badge/-document-333333?style=flat-square) ![etl-pipeline](https://img.shields.io/badge/-etl-pipeline-333333?style=flat-square) ![java](https://img.shields.io/badge/-java-333333?style=flat-square) ![local-ai](https://img.shields.io/badge/-local-ai-333333?style=flat-square) ![ollama](https://img.shields.io/badge/-ollama-333333?style=flat-square) ![ollama-chat](https://img.shields.io/badge/-ollama-chat-333333?style=flat-square)
+
+<br/>
+🛠 Java &nbsp;&nbsp;⭐ 0 &nbsp;&nbsp; 🍴 0
+</td>
+</tr>
+<tr>
+<td width="50%">
+<a href="https://github.com/shvmpk/next-hire-ai"><b>📌 shvmpk/next-hire-ai</b></a>
+<br/>
+Seamless and intuitive experience for job seekers and recruiters to analyze resumes (CVs) based on job descriptions.
+<br/>
+![applicant-tracking-system](https://img.shields.io/badge/-applicant-tracking-system-333333?style=flat-square) ![ats](https://img.shields.io/badge/-ats-333333?style=flat-square) ![ats-score-checker](https://img.shields.io/badge/-ats-score-checker-333333?style=flat-square) ![jobsearch](https://img.shields.io/badge/-jobsearch-333333?style=flat-square) ![jobseeker](https://img.shields.io/badge/-jobseeker-333333?style=flat-square) ![recruiter](https://img.shields.io/badge/-recruiter-333333?style=flat-square)
+
+<br/>
+🛠 TypeScript &nbsp;&nbsp;⭐ 7 &nbsp;&nbsp; 🍴 2
+</td>
+<td width="50%">
+<a href="https://github.com/shvmpk/tvflix"><b>📌 shvmpk/tvflix</b></a>
+<br/>
+Tvflix is a simple and responsive web app built using Vanilla JS, leveraging the power of Postman and the TMDB API to seamlessly fetch and display comprehensive movie details. This project serves as a template for larger applications.
+<br/>
+![movie-recomendation-system](https://img.shields.io/badge/-movie-recomendation-system-333333?style=flat-square) ![movie-recommendation-app](https://img.shields.io/badge/-movie-recommendation-app-333333?style=flat-square) ![movie-web-app](https://img.shields.io/badge/-movie-web-app-333333?style=flat-square) ![tvflix](https://img.shields.io/badge/-tvflix-333333?style=flat-square)
+
+<br/>
+🛠 CSS &nbsp;&nbsp;⭐ 7 &nbsp;&nbsp; 🍴 10
+</td>
+</tr>
+<tr>
+<td width="50%">
+<a href="https://github.com/shvmpk/SayGPT"><b>📌 shvmpk/SayGPT</b></a>
+<br/>
+Full stack AI-Chat GPT Clone, Uses Gemini to get query and image responses. Minimalistic Responsive UI with Full authentication and User Secure.
+<br/>
+![ai-chat](https://img.shields.io/badge/-ai-chat-333333?style=flat-square) ![ai-chatbot](https://img.shields.io/badge/-ai-chatbot-333333?style=flat-square) ![chatgpt-app](https://img.shields.io/badge/-chatgpt-app-333333?style=flat-square) ![chatgpt-clone](https://img.shields.io/badge/-chatgpt-clone-333333?style=flat-square) ![gemini-api](https://img.shields.io/badge/-gemini-api-333333?style=flat-square) ![gemini-chat](https://img.shields.io/badge/-gemini-chat-333333?style=flat-square)
+
+<br/>
+🛠 JavaScript &nbsp;&nbsp;⭐ 4 &nbsp;&nbsp; 🍴 2
+</td>
+</tr>
+</table>
+
 <!-- PINNED-REPOS:END -->
 
 <h3 align="left">📊 GitHub Stats</h3>
