@@ -2,9 +2,35 @@
   <img src="https://count.getloli.com/@:shvmpk?theme=original-old&padding=7&scale=1&align=bottom&pixelated=1&darkmode=auto" />
 </div>
 
-<h1 align="center">Hey 👋 What's Up?</h1>
+<h1 align="center">Hi 👋 I'm Shivam</h1>
 
-<h3 align="center">🛠️ Tech Stack</h3>
+<h3 align="center">Software Engineer • Full Stack Developer • Cloud Enthusiast</h3>
+
+## 👨‍💻 About Me
+
+<table cellpadding="10">
+<tr>
+<td width="340" valign="middle">
+
+<img src="https://media1.tenor.com/m/hS9ht-DP308AAAAC/yes-hello.gif" width="300" alt="Kageyama greeting"/>
+
+</td>
+<td valign="middle">
+
+- 💼 **Role:** Software Engineer
+- 🌱 **Currently Building:** Production-grade systems & scalable backends
+- ❤️ **Passionate About:** Full Stack Development (React, Next.js, Spring Boot, Node.js)
+- ☁️ **Exploring:** AWS, Docker & Kubernetes
+- 🛠️ **Interests:** FOSS & Productivity Tools
+- 📚 **Always Learning:** New technologies
+- 🌅 **Early Bird:** Mornings are for shipping code
+- 🎌 **Offline:** Watching anime
+
+</td>
+</tr>
+</table>
+
+## 🛠️ Tech Stack
 
 <div align="center">
   <img src="https://skillicons.dev/icons?i=py" height="42" alt="python logo" />
@@ -42,24 +68,7 @@
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" height="42" alt="redis logo" />
 </div>
 
-<h3 align="center">⚡ About Me</h3>
-
-<div align="center">
-
-| | |
-|---|---|
-| 👨‍💻 Role | Software Engineer |
-| 🔭 Interests | FOSS & Productivity Tools |
-| 🏗️ Currently Building | Production-grade systems & scalable backends |
-| 🌐 Loves | Full Stack Dev — React, Next.js, Spring Boot, Node.js |
-| ☁️ Into | Cloud, Containers & DevOps (AWS, Docker, K8s) |
-| 📚 Always | Learning New Technologies |
-| 🌅 Productivity Peak | Early Bird — mornings are for shipping code |
-| ⛩️ Downtime | Watching Anime |
-
-</div>
-
-<h3 align="center">📊 GitHub Stats</h3>
+<h3 align="left">📊 GitHub Stats</h3>
 
 <div align="center">
 
@@ -67,7 +76,7 @@
 
 </div>
 
-<h3 align="center">🌟 Top Followers</h3>
+<h3 align="left">🌟 Top Followers</h3>
 
 <!--START_SECTION:top-followers-->
 <table>
