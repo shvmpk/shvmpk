@@ -1,3 +1,9 @@
+"""Fetch top GitHub followers via GraphQL and update the profile README with a ranked table.
+
+Filters out inactive, follow-spam, and high-ratio accounts using configurable heuristics.
+Intended to be run as a scheduled GitHub Actions workflow.
+"""
+
 """
    Copyright 2026 Shivam Prakash <https://github.com/shvmpk>
 

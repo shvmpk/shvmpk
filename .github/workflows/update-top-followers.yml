@@ -24,7 +24,7 @@ jobs:
       - name: Install dependencies
         run: pip install requests
 
-      - name: Run getTopFollowers.py
+      - name: Run fetch_top_followers.py
         env:
           GH_HANDLE: ${{ github.repository_owner }}
           # Tune these to control how many followers make the list:
@@ -33,7 +33,7 @@ jobs:
           MAX_FOLLOW_RATIO: "15"            # hard cutoff: following/followers above this is treated as spam
           INACTIVITY_THRESHOLD: "5"         # min contributions/year to count as "active"
         run: |
-          python src/getTopFollowers.py "$GH_HANDLE" "${{ secrets.GITHUB_TOKEN }}" README.md
+          python scripts/fetch_top_followers.py "$GH_HANDLE" "${{ secrets.GITHUB_TOKEN }}" README.md
 
       - name: Commit changes if README updated
         run: |
