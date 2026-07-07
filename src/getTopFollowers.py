@@ -47,49 +47,49 @@ MAX_FOLLOW_RATIO = float(os.environ.get("MAX_FOLLOW_RATIO", 15))
 
 
 QUERY_TEMPLATE = '''
-query($login: String!, $pageSize: Int!, $cursor: String) {{
-    user(login: $login) {{
-        followers(first: $pageSize, after: $cursor) {{
-            pageInfo {{
+query($login: String!, $pageSize: Int!, $cursor: String) {
+    user(login: $login) {
+        followers(first: $pageSize, after: $cursor) {
+            pageInfo {
                 endCursor
                 hasNextPage
-            }}
-            nodes {{
+            }
+            nodes {
                 login
                 name
                 databaseId
-                following {{
+                following {
                     totalCount
-                }}
-                followers {{
+                }
+                followers {
                     totalCount
-                }}
+                }
                 repositories(
                     first: 20,
-                    orderBy: {{ field: STARGAZERS, direction: DESC }},
-                ) {{
-                    nodes {{
+                    orderBy: { field: STARGAZERS, direction: DESC },
+                ) {
+                    nodes {
                         stargazerCount
-                    }}
-                }}
+                    }
+                }
                 repositoriesContributedTo(
                     first: 50,
                     contributionTypes: [COMMIT],
-                    orderBy: {{ field: STARGAZERS, direction: DESC }},
-                ) {{
-                    nodes {{
+                    orderBy: { field: STARGAZERS, direction: DESC },
+                ) {
+                    nodes {
                         stargazerCount
-                    }}
-                }}
-                contributionsCollection {{
-                    contributionCalendar {{
+                    }
+                }
+                contributionsCollection {
+                    contributionCalendar {
                         totalContributions
-                    }}
-                }}
-            }}
-        }}
-    }}
-}}
+                    }
+                }
+            }
+        }
+    }
+}
 '''
 
 
