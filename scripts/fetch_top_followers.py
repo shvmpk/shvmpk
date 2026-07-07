@@ -1,9 +1,4 @@
-"""Fetch top GitHub followers via GraphQL and update the profile README with a ranked table.
-
-Filters out inactive, follow-spam, and high-ratio accounts using configurable heuristics.
-Ranks surviving followers by a blended score of stars + followers + follow ratio.
-Intended to be run as a scheduled GitHub Actions workflow.
-"""
+"""Fetch top GitHub followers via GraphQL and update the profile README with a ranked table."""
 
 """
    Copyright 2026 Shivam Prakash <https://github.com/shvmpk>
@@ -30,38 +25,20 @@ from functools import partial
 from dataclasses import dataclass
 from typing import Optional
 
-# --- Tunables ---
-# All of these can be overridden via environment variables of the same name,
-# so you can adjust strictness from the GitHub Actions workflow without
-# touching this file.
 MAX_RETRIES = int(os.environ.get("MAX_RETRIES", 3))
 INITIAL_CWND = int(os.environ.get("INITIAL_CWND", 1))
 INITIAL_SSTHRESH = int(os.environ.get("INITIAL_SSTHRESH", 20))
-INACTIVITY_THRESHOLD = int(os.environ.get("INACTIVITY_THRESHOLD", 5))          # min contributions/year to count as "active"
-NOTABLE_FOLLOWER_THRESHOLD = int(os.environ.get("NOTABLE_FOLLOWER_THRESHOLD", 500))  # marks skipped-but-notable users with *
+INACTIVITY_THRESHOLD = int(os.environ.get("INACTIVITY_THRESHOLD", 5))
+NOTABLE_FOLLOWER_THRESHOLD = int(os.environ.get("NOTABLE_FOLLOWER_THRESHOLD", 500))
 TABLE_MAX_ENTRIES = int(os.environ.get("TABLE_MAX_ENTRIES", 21))
 TABLE_COLUMNS = int(os.environ.get("TABLE_COLUMNS", 7))
 MAX_FOLLOWERS_TO_SCAN = os.environ.get("MAX_FOLLOWERS_TO_SCAN")
 MAX_FOLLOWERS_TO_SCAN = int(MAX_FOLLOWERS_TO_SCAN) if MAX_FOLLOWERS_TO_SCAN else None
 
-# Quota formula: quota = follower_count * QUOTA_BASE_MULTIPLIER + star bonuses.
-# Raising QUOTA_BASE_MULTIPLIER gives modest accounts (few/no starred repos)
-# more room before being flagged as follow-spam. 1 = original strict behavior.
-# Default raised from 3 -> 6 since small accounts (few followers) don't need
-# aggressive spam-defense the way large accounts do.
 QUOTA_BASE_MULTIPLIER = float(os.environ.get("QUOTA_BASE_MULTIPLIER", 6))
-# Max following:follower ratio allowed regardless of stars/quota — a hard
-# backstop against obvious bot accounts (e.g. 190,000 following, 18,000 followers).
-# Default raised from 15 -> 30 for the same reason.
 MAX_FOLLOW_RATIO = float(os.environ.get("MAX_FOLLOW_RATIO", 30))
 
-# --- Ranking weights ---
-# Final score = follower_count
-#             + STAR_WEIGHT * best_repo_stars
-#             - RATIO_PENALTY_WEIGHT * (following / max(follower_count, 1))
-# Higher STAR_WEIGHT -> people with a popular starred repo rank higher.
-# Higher RATIO_PENALTY_WEIGHT -> people who follow way more than they're
-# followed back rank lower, even if not filtered out entirely.
+# score = follower_count + STAR_WEIGHT * best_repo_stars - RATIO_PENALTY_WEIGHT * (following / followers)
 STAR_WEIGHT = float(os.environ.get("STAR_WEIGHT", 2.0))
 RATIO_PENALTY_WEIGHT = float(os.environ.get("RATIO_PENALTY_WEIGHT", 1.0))
 
@@ -115,8 +92,6 @@ query($login: String!, $pageSize: Int!, $cursor: String) {
 
 @dataclass(frozen=True, order=True)
 class Follower:
-    # `score` is listed first so dataclass(order=True) sorts on it primarily;
-    # follower_count is the tiebreaker, login keeps ties deterministic.
     score: float
     follower_count: int
     login: str
@@ -125,16 +100,10 @@ class Follower:
 
 
 class GraphQLError(Exception):
-    """Raised when the API returns a well-formed error we can't recover from."""
     pass
 
 
 def run_query(handle: str, page_size: int, cursor: Optional[str], headers: dict) -> dict:
-    """POST the GraphQL query and return the parsed JSON body.
-
-    Raises GraphQLError on HTTP-level failure or if the body isn't JSON,
-    so callers can distinguish this from network exceptions.
-    """
     payload = {
         "query": QUERY_TEMPLATE,
         "variables": {
@@ -171,8 +140,6 @@ def run_query(handle: str, page_size: int, cursor: Optional[str], headers: dict)
 
 
 def compute_quota(follower_count: int, repo_stars: list, contrib_stars: list) -> float:
-    """Heuristic cap on how many people someone is 'allowed' to follow
-    before we consider it follow-for-follow spam."""
     quota = follower_count * QUOTA_BASE_MULTIPLIER
     for i, star_count in enumerate(repo_stars):
         if star_count <= i:
@@ -186,8 +153,6 @@ def compute_quota(follower_count: int, repo_stars: list, contrib_stars: list) ->
 
 
 def compute_score(follower_count: int, following: int, repo_stars: list, contrib_stars: list) -> float:
-    """Blended ranking score: rewards followers and starred repos,
-    lightly penalizes a high following:follower ratio."""
     best_stars = max(repo_stars + contrib_stars, default=0)
     ratio_penalty = RATIO_PENALTY_WEIGHT * (following / max(follower_count, 1))
     return follower_count + STAR_WEIGHT * best_stars - ratio_penalty
@@ -198,7 +163,6 @@ def fetch_followers(handle: str, headers: dict, log) -> list:
     cursor = None
     scanned = 0
 
-    # Separate retry budgets so unrelated failure modes don't share one strike count.
     network_retries = 0
     api_retries = 0
     parse_retries = 0
