@@ -98,20 +98,6 @@
 <table>
   <tr>
     <td align="center">
-      <a href="https://github.com/rahman-O">
-        <img src="https://avatars2.githubusercontent.com/u/56340698" width="100px;" alt="rahman-O"/>
-      </a>
-      <br />
-      <a href="https://github.com/rahman-O">Abdalrahman M.Mohhy</a>
-    </td>
-    <td align="center">
-      <a href="https://github.com/David-Horjet">
-        <img src="https://avatars2.githubusercontent.com/u/93748510" width="100px;" alt="David-Horjet"/>
-      </a>
-      <br />
-      <a href="https://github.com/David-Horjet">David Horjet</a>
-    </td>
-    <td align="center">
       <a href="https://github.com/johnny-rice">
         <img src="https://avatars2.githubusercontent.com/u/718718" width="100px;" alt="johnny-rice"/>
       </a>
@@ -126,11 +112,11 @@
       <a href="https://github.com/Ryuk-me">Neeraj Kumar</a>
     </td>
     <td align="center">
-      <a href="https://github.com/samrahimi">
-        <img src="https://avatars2.githubusercontent.com/u/3899396" width="100px;" alt="samrahimi"/>
+      <a href="https://github.com/rahman-O">
+        <img src="https://avatars2.githubusercontent.com/u/56340698" width="100px;" alt="rahman-O"/>
       </a>
       <br />
-      <a href="https://github.com/samrahimi">Sam Rahimi</a>
+      <a href="https://github.com/rahman-O">Abdalrahman M.Mohhy</a>
     </td>
     <td align="center">
       <a href="https://github.com/AbdoXCode">
@@ -140,14 +126,35 @@
       <a href="https://github.com/AbdoXCode">Abdelrhman Ayman</a>
     </td>
     <td align="center">
+      <a href="https://github.com/David-Horjet">
+        <img src="https://avatars2.githubusercontent.com/u/93748510" width="100px;" alt="David-Horjet"/>
+      </a>
+      <br />
+      <a href="https://github.com/David-Horjet">David Horjet</a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/samrahimi">
+        <img src="https://avatars2.githubusercontent.com/u/3899396" width="100px;" alt="samrahimi"/>
+      </a>
+      <br />
+      <a href="https://github.com/samrahimi">Sam Rahimi</a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/Ritam-jash">
+        <img src="https://avatars2.githubusercontent.com/u/162781852" width="100px;" alt="Ritam-jash"/>
+      </a>
+      <br />
+      <a href="https://github.com/Ritam-jash">Ritam Jash</a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
       <a href="https://github.com/decoder-17">
         <img src="https://avatars2.githubusercontent.com/u/54593072" width="100px;" alt="decoder-17"/>
       </a>
       <br />
       <a href="https://github.com/decoder-17">Tanupam Saha</a>
     </td>
-  </tr>
-  <tr>
     <td align="center">
       <a href="https://github.com/rj-rishav">
         <img src="https://avatars2.githubusercontent.com/u/58115693" width="100px;" alt="rj-rishav"/>
@@ -161,6 +168,13 @@
       </a>
       <br />
       <a href="https://github.com/Brigoliboon">Brigoliboon</a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/Sypher0Dronzer">
+        <img src="https://avatars2.githubusercontent.com/u/83546205" width="100px;" alt="Sypher0Dronzer"/>
+      </a>
+      <br />
+      <a href="https://github.com/Sypher0Dronzer">Soham Saha</a>
     </td>
     <td align="center">
       <a href="https://github.com/sagarscaminosoftai">
