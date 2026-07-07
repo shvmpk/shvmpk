@@ -80,12 +80,5 @@
 </div>
 
 ###
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/shvmpk/shvmpk/output/pacman-contribution-graph-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/shvmpk/shvmpk/output/pacman-contribution-graph.svg">
-  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/shvmpk/shvmpk/output/pacman-contribution-graph.svg">
-</picture>
-
-
+![](./profile-3d-contrib/profile-green-animate.svg)
 ###

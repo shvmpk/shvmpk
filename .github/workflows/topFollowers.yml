@@ -1,0 +1,43 @@
+name: Top Followers
+
+on:
+  schedule:
+    # Runs daily at 00:00 UTC.
+    - cron: "0 0 * * *"
+  workflow_dispatch: {}   # allows manual trigger from the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run getTopFollowers.py
+        env:
+          GH_HANDLE: ${{ github.repository_owner }}
+        run: |
+          python src/getTopFollowers.py "$GH_HANDLE" "${{ secrets.GITHUB_TOKEN }}" README.md
+
+      - name: Commit changes if README updated
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet -- README.md; then
+            echo "No changes to commit"
+          else
+            git add README.md
+            git commit -m "chore: update top followers section"
+            git push
+          fi
