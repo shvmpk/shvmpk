@@ -68,6 +68,12 @@
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" height="42" alt="redis logo" />
 </div>
 
+<h3 align="left">📌 Pinned Repos</h3>
+
+<!-- PINNED-REPOS:START -->
+
+<!-- PINNED-REPOS:END -->
+
 <h3 align="left">📊 GitHub Stats</h3>
 
 <div align="center">

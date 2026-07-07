@@ -1,0 +1,49 @@
+name: Update Pinned Repos in README
+
+on:
+  schedule:
+    # Runs once a day at 06:00 UTC. Adjust as you like.
+    - cron: "0 6 * * *"
+  workflow_dispatch: {}
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Update README with pinned repos
+        env:
+          # GH_TOKEN: create a Personal Access Token (classic, no scopes
+          # needed for public data, or "public_repo" to be safe) and add
+          # it as a repo secret named GH_TOKEN. This is required because
+          # the default GITHUB_TOKEN cannot query the GraphQL "pinnedItems"
+          # field for your profile.
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GH_USERNAME: ${{ github.repository_owner }}
+          # Set to "false" to hide topic/tag badges on each card.
+          SHOW_TOPICS: "true"
+        run: python scripts/update_pinned_repos.py
+
+      - name: Commit and push if README changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet README.md; then
+            echo "No changes to README.md, nothing to commit."
+          else
+            git add README.md
+            git commit -m "chore: update pinned repos in README [skip ci]"
+            git push
+          fi

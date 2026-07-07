@@ -1,4 +1,4 @@
-name: Top Followers
+name: Update Top Followers
 
 on:
   schedule:

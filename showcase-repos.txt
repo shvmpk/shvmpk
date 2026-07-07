@@ -1,0 +1,15 @@
+# List the repos you want showcased on your profile, one per line.
+# Format: owner/repo-name   (or just repo-name if it's under your own account)
+# Lines starting with # are ignored. Order here = order shown in README.
+
+
+shvmpk/url-shortener
+shvmpk/linkedin-ai-composer
+shvmpk/github-contributor-bot
+shvmpk/spring-ai-local-rag
+shvmpk/next-hire-ai
+shvmpk/tvflix
+shvmpk/SayGPT
+ 
+# Delete this whole file if you'd rather just show your GitHub-pinned repos
+# automatically instead of maintaining this list.
