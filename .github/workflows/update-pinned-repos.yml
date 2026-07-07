@@ -32,8 +32,6 @@ jobs:
           # field for your profile.
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           GH_USERNAME: ${{ github.repository_owner }}
-          # Set to "false" to hide topic/tag badges on each card.
-          SHOW_TOPICS: "true"
         run: python scripts/update_pinned_repos.py
 
       - name: Commit and push if README changed

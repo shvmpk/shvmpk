@@ -41,24 +41,6 @@ Optional environment variables:
     MAX_PINNED    - max pinned repos to fetch in pinned mode (default 6).
     README_PATH   - path to the README file to update (default "README.md").
     SHOWCASE_FILE - path to the curated repo list (default "showcase-repos.txt").
-    SHOW_TOPICS   - "true"/"false" - whether to render topic/tag badges
-                    (default "true").
-"""
-
-"""
-   Copyright 2026 Shivam Prakash <https://github.com/shvmpk>
-
-   Licensed under the Apache License, Version 2.0 (the "License");
-   you may not use this file except in compliance with the License.
-   You may obtain a copy of the License at
-
-       http://www.apache.org/licenses/LICENSE-2.0
-
-   Unless required by applicable law or agreed to in writing, software
-   distributed under the License is distributed on an "AS IS" BASIS,
-   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-   See the License for the specific language governing permissions and
-   limitations under the License.
 """
 
 import json
@@ -115,13 +97,6 @@ def get_env(name, default=None, required=False):
         print(f"ERROR: required environment variable '{name}' is not set.", file=sys.stderr)
         sys.exit(1)
     return value
-
-
-def get_bool_env(name, default=True):
-    value = os.environ.get(name)
-    if value is None:
-        return default
-    return value.strip().lower() in ("1", "true", "yes", "on")
 
 
 def graphql_request(token, query, variables):
@@ -203,54 +178,25 @@ def fetch_curated_repos(token, entries):
     return repos
 
 
-def render_markdown(repos, show_topics=True):
+def render_markdown(repos):
     if not repos:
         return "_No repositories to show yet — add some to showcase-repos.txt or pin some on your profile!_"
 
-    # A 2-column table reads well on profile READMEs and matches the
-    # look of the native "pinned repos" cards without needing external
-    # image-generation services.
-    lines = ["<table>", "<tr>"]
+    # A clean GitHub-flavored-markdown table renders far more reliably
+    # across README viewers than nested HTML tables, and keeps things
+    # simple: just the repo name (linked) and its description.
+    lines = [
+        "| Repository | Description |",
+        "| :--- | :--- |",
+    ]
 
-    for i, repo in enumerate(repos):
+    for repo in repos:
         name = repo["nameWithOwner"]
         url = repo["url"]
-        desc = (repo.get("description") or "No description provided.").replace("|", "\\|")
-        stars = repo.get("stargazerCount", 0)
-        forks = repo.get("forkCount", 0)
-        lang = (repo.get("primaryLanguage") or {}).get("name") if repo.get("primaryLanguage") else None
-        lang_badge = f"🛠 {lang} &nbsp;&nbsp;" if lang else ""
+        desc = (repo.get("description") or "_No description provided._").replace("|", "\\|").replace("\n", " ")
 
-        topics_line = ""
-        if show_topics:
-            topic_nodes = repo.get("repositoryTopics", {}).get("nodes", [])
-            topics = [t["topic"]["name"] for t in topic_nodes if t.get("topic")]
-            # Render topics as small shield-style badges, similar to GitHub's own look.
-            if topics:
-                badges = " ".join(
-                    f"![{t}](https://img.shields.io/badge/-{t}-333333?style=flat-square)"
-                    for t in topics
-                )
-                topics_line = f"<br/>\n{badges}\n"
+        lines.append(f"| **[{name}]({url})** | {desc} |")
 
-        card = f"""
-<td width="50%">
-<a href="{url}"><b>📌 {name}</b></a>
-<br/>
-{desc}
-{topics_line}
-<br/>
-{lang_badge}⭐ {stars} &nbsp;&nbsp; 🍴 {forks}
-</td>
-""".strip()
-
-        lines.append(card)
-        # two cards per row
-        if i % 2 == 1 and i != len(repos) - 1:
-            lines.append("</tr>\n<tr>")
-
-    lines.append("</tr>")
-    lines.append("</table>")
     return "\n".join(lines)
 
 
@@ -287,7 +233,6 @@ def main():
     max_items = int(get_env("MAX_PINNED", "6"))
     readme_path = get_env("README_PATH", "README.md")
     showcase_file = get_env("SHOWCASE_FILE", "showcase-repos.txt")
-    show_topics = get_bool_env("SHOW_TOPICS", default=True)
 
     if os.path.exists(showcase_file):
         print(f"Found '{showcase_file}' — using curated repo list.")
@@ -297,7 +242,7 @@ def main():
         print(f"No '{showcase_file}' found — falling back to your pinned repos.")
         repos = fetch_pinned_repos(token, username, max_items)
 
-    markdown = render_markdown(repos, show_topics=show_topics)
+    markdown = render_markdown(repos)
     update_readme(readme_path, markdown)
 
 
