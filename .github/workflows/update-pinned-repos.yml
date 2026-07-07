@@ -1,12 +1,13 @@
 name: Update Pinned Repos in README
 
 on:
-  schedule:
-    # Runs once a day at 06:00 UTC. Adjust as you like.
-    - cron: "0 6 * * *"
   workflow_dispatch: {}
   push:
     branches: [main]
+    paths:
+      - showcase-repos.txt
+      - scripts/update_pinned_repos.py
+      - .github/workflows/update-pinned-repos.yml
 
 permissions:
   contents: write
