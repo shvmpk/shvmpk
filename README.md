@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://count.getloli.com/@:shvmpk?theme=original-old&padding=7&scale=1&align=bottom&pixelated=1&darkmode=auto" />
+  <img src="https://count.getloli.com/@:shvmpk?theme=rule34&scale=1.5" />
 </div>
 
 <h1 align="center">Hi 👋 I'm Shivam</h1>
