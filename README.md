@@ -126,6 +126,13 @@
       <a href="https://github.com/helallao">Ali Yaşar</a>
     </td>
     <td align="center">
+      <a href="https://github.com/seckinyasar">
+        <img src="https://avatars2.githubusercontent.com/u/86570205" width="100px;" alt="seckinyasar"/>
+      </a>
+      <br />
+      <a href="https://github.com/seckinyasar">Seckin Yasar</a>
+    </td>
+    <td align="center">
       <a href="https://github.com/felicityblueish">
         <img src="https://avatars2.githubusercontent.com/u/240364875" width="100px;" alt="felicityblueish"/>
       </a>
@@ -139,6 +146,8 @@
       <br />
       <a href="https://github.com/mmertpolat">Muhammet Mert Polat</a>
     </td>
+  </tr>
+  <tr>
     <td align="center">
       <a href="https://github.com/Ryuk-me">
         <img src="https://avatars2.githubusercontent.com/u/55330971" width="100px;" alt="Ryuk-me"/>
@@ -146,8 +155,6 @@
       <br />
       <a href="https://github.com/Ryuk-me">Neeraj Kumar</a>
     </td>
-  </tr>
-  <tr>
     <td align="center">
       <a href="https://github.com/rahman-O">
         <img src="https://avatars2.githubusercontent.com/u/56340698" width="100px;" alt="rahman-O"/>
@@ -190,6 +197,8 @@
       <br />
       <a href="https://github.com/Ritam-jash">Ritam Jash</a>
     </td>
+  </tr>
+  <tr>
     <td align="center">
       <a href="https://github.com/decoder-17">
         <img src="https://avatars2.githubusercontent.com/u/54593072" width="100px;" alt="decoder-17"/>
@@ -197,8 +206,6 @@
       <br />
       <a href="https://github.com/decoder-17">Tanupam Saha</a>
     </td>
-  </tr>
-  <tr>
     <td align="center">
       <a href="https://github.com/rj-rishav">
         <img src="https://avatars2.githubusercontent.com/u/58115693" width="100px;" alt="rj-rishav"/>
@@ -241,6 +248,8 @@
       <br />
       <a href="https://github.com/Sypher0Dronzer">Soham Saha</a>
     </td>
+  </tr>
+  <tr>
     <td align="center">
       <a href="https://github.com/gsiddhi04">
         <img src="https://avatars2.githubusercontent.com/u/155354417" width="100px;" alt="gsiddhi04"/>
@@ -248,8 +257,6 @@
       <br />
       <a href="https://github.com/gsiddhi04">gsiddhi04</a>
     </td>
-  </tr>
-  <tr>
     <td align="center">
       <a href="https://github.com/Acharaya">
         <img src="https://avatars2.githubusercontent.com/u/112647523" width="100px;" alt="Acharaya"/>
