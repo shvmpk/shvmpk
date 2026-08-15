@@ -242,20 +242,20 @@
       <a href="https://github.com/sagarscaminosoftai">sagar sharma</a>
     </td>
     <td align="center">
-      <a href="https://github.com/Sypher0Dronzer">
-        <img src="https://avatars2.githubusercontent.com/u/83546205" width="100px;" alt="Sypher0Dronzer"/>
-      </a>
-      <br />
-      <a href="https://github.com/Sypher0Dronzer">Soham Saha</a>
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
       <a href="https://github.com/gsiddhi04">
         <img src="https://avatars2.githubusercontent.com/u/155354417" width="100px;" alt="gsiddhi04"/>
       </a>
       <br />
       <a href="https://github.com/gsiddhi04">gsiddhi04</a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/Sypher0Dronzer">
+        <img src="https://avatars2.githubusercontent.com/u/83546205" width="100px;" alt="Sypher0Dronzer"/>
+      </a>
+      <br />
+      <a href="https://github.com/Sypher0Dronzer">Soham Saha</a>
     </td>
     <td align="center">
       <a href="https://github.com/Acharaya">
