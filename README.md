@@ -235,12 +235,21 @@
       <a href="https://github.com/OmTiwary">Om Tiwary</a>
     </td>
     <td align="center">
+      <a href="https://github.com/kumarianjali31">
+        <img src="https://avatars2.githubusercontent.com/u/101886648" width="100px;" alt="kumarianjali31"/>
+      </a>
+      <br />
+      <a href="https://github.com/kumarianjali31">kumarianjali31</a>
+    </td>
+    <td align="center">
       <a href="https://github.com/sagarscaminosoftai">
         <img src="https://avatars2.githubusercontent.com/u/125298459" width="100px;" alt="sagarscaminosoftai"/>
       </a>
       <br />
       <a href="https://github.com/sagarscaminosoftai">sagar sharma</a>
     </td>
+  </tr>
+  <tr>
     <td align="center">
       <a href="https://github.com/gsiddhi04">
         <img src="https://avatars2.githubusercontent.com/u/155354417" width="100px;" alt="gsiddhi04"/>
@@ -248,8 +257,6 @@
       <br />
       <a href="https://github.com/gsiddhi04">gsiddhi04</a>
     </td>
-  </tr>
-  <tr>
     <td align="center">
       <a href="https://github.com/Sypher0Dronzer">
         <img src="https://avatars2.githubusercontent.com/u/83546205" width="100px;" alt="Sypher0Dronzer"/>
