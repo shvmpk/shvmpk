@@ -105,18 +105,18 @@
       <a href="https://github.com/johnny-rice">Johnny Rice</a>
     </td>
     <td align="center">
-      <a href="https://github.com/esin">
-        <img src="https://avatars2.githubusercontent.com/u/69767" width="100px;" alt="esin"/>
-      </a>
-      <br />
-      <a href="https://github.com/esin">Andrey Esin</a>
-    </td>
-    <td align="center">
       <a href="https://github.com/helallao">
         <img src="https://avatars2.githubusercontent.com/u/78656003" width="100px;" alt="helallao"/>
       </a>
       <br />
       <a href="https://github.com/helallao">Ali Yaşar</a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/esin">
+        <img src="https://avatars2.githubusercontent.com/u/69767" width="100px;" alt="esin"/>
+      </a>
+      <br />
+      <a href="https://github.com/esin">Andrey Esin</a>
     </td>
     <td align="center">
       <a href="https://github.com/seckinyasar">
