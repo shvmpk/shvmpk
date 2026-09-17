@@ -265,6 +265,13 @@
       <a href="https://github.com/gsiddhi04">gsiddhi04</a>
     </td>
     <td align="center">
+      <a href="https://github.com/beemybold">
+        <img src="https://avatars2.githubusercontent.com/u/84565969" width="100px;" alt="beemybold"/>
+      </a>
+      <br />
+      <a href="https://github.com/beemybold">Bernado Myrtil</a>
+    </td>
+    <td align="center">
       <a href="https://github.com/Acharaya">
         <img src="https://avatars2.githubusercontent.com/u/112647523" width="100px;" alt="Acharaya"/>
       </a>
