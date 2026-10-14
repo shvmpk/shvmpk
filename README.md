@@ -119,13 +119,6 @@
       <a href="https://github.com/esin">Andrey Esin</a>
     </td>
     <td align="center">
-      <a href="https://github.com/seckinyasar">
-        <img src="https://avatars2.githubusercontent.com/u/86570205" width="100px;" alt="seckinyasar"/>
-      </a>
-      <br />
-      <a href="https://github.com/seckinyasar">Seckin Yasar</a>
-    </td>
-    <td align="center">
       <a href="https://github.com/felicityblueish">
         <img src="https://avatars2.githubusercontent.com/u/240364875" width="100px;" alt="felicityblueish"/>
       </a>
@@ -146,8 +139,6 @@
       <br />
       <a href="https://github.com/Ryuk-me">Neeraj Kumar</a>
     </td>
-  </tr>
-  <tr>
     <td align="center">
       <a href="https://github.com/rahman-O">
         <img src="https://avatars2.githubusercontent.com/u/56340698" width="100px;" alt="rahman-O"/>
@@ -155,6 +146,8 @@
       <br />
       <a href="https://github.com/rahman-O">Abdalrahman M.Mohhy</a>
     </td>
+  </tr>
+  <tr>
     <td align="center">
       <a href="https://github.com/AbdoXCode">
         <img src="https://avatars2.githubusercontent.com/u/195650454" width="100px;" alt="AbdoXCode"/>
@@ -197,8 +190,6 @@
       <br />
       <a href="https://github.com/nirajpd">Niraj Prasad</a>
     </td>
-  </tr>
-  <tr>
     <td align="center">
       <a href="https://github.com/decoder-17">
         <img src="https://avatars2.githubusercontent.com/u/54593072" width="100px;" alt="decoder-17"/>
@@ -206,6 +197,8 @@
       <br />
       <a href="https://github.com/decoder-17">Tanupam Saha</a>
     </td>
+  </tr>
+  <tr>
     <td align="center">
       <a href="https://github.com/rj-rishav">
         <img src="https://avatars2.githubusercontent.com/u/58115693" width="100px;" alt="rj-rishav"/>
@@ -248,8 +241,6 @@
       <br />
       <a href="https://github.com/sagarscaminosoftai">sagar sharma</a>
     </td>
-  </tr>
-  <tr>
     <td align="center">
       <a href="https://github.com/samruddhibaviskar11">
         <img src="https://avatars2.githubusercontent.com/u/79337465" width="100px;" alt="samruddhibaviskar11"/>
@@ -257,6 +248,8 @@
       <br />
       <a href="https://github.com/samruddhibaviskar11">Samruddhi Baviskar</a>
     </td>
+  </tr>
+  <tr>
     <td align="center">
       <a href="https://github.com/gsiddhi04">
         <img src="https://avatars2.githubusercontent.com/u/155354417" width="100px;" alt="gsiddhi04"/>
