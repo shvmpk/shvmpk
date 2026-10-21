@@ -1,72 +1,23 @@
-<div align="center">
-  <img src="https://count.getloli.com/@:shvmpk?theme=rule34&scale=1.5" />
-</div>
+# Hi, I'm Shivam 👋
 
-<h1 align="center">Hi 👋 I'm Shivam</h1>
+### Software Engineer | Distributed Systems
 
-<h3 align="center">Software Engineer • Full Stack Developer • Cloud Enthusiast</h3>
+I enjoy building backend systems and exploring the engineering challenges behind reliable, scalable applications.
 
-## 👨‍💻 About Me
+My interests include distributed systems, API design, asynchronous processing, database optimization, cloud infrastructure, and self-hosted AI applications.
 
-<table cellpadding="10">
-<tr>
-<td width="340" valign="middle">
-
-<img src="https://media1.tenor.com/m/hS9ht-DP308AAAAC/yes-hello.gif" width="300" alt="Kageyama greeting"/>
-
-</td>
-<td valign="middle">
-
-- 💼 **Role:** Software Engineer
-- 🌱 **Currently Building:** Production-grade systems & scalable backends
-- ❤️ **Passionate About:** Full Stack Development (React, Next.js, Spring Boot, Node.js)
-- ☁️ **Exploring:** AWS, Docker & Kubernetes
-- 🛠️ **Interests:** FOSS & Productivity Tools
-- 📚 **Always Learning:** New technologies
-- 🌅 **Early Bird:** Mornings are for shipping code
-- 🎌 **Offline:** Watching anime
-
-</td>
-</tr>
-</table>
 
 ## 🛠️ Tech Stack
 
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=py" height="42" alt="python logo" />
-  <img width="10" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="42" alt="javascript logo" />
-  <img width="10" />
-  <img src="https://skillicons.dev/icons?i=ts" height="42" alt="typescript logo" />
-  <img width="10" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="42" alt="react logo" />
-  <img width="10" />
-  <img src="https://skillicons.dev/icons?i=nextjs" height="42" alt="nextjs logo" />
-  <img width="10" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" height="42" alt="redux logo" />
-  <img width="10" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" height="42" alt="java logo" />
-  <img width="10" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" height="42" alt="spring logo" />
-  <img width="10" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" height="42" alt="nodejs logo" />
-  <img width="10" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" height="42" alt="docker logo" />
-  <img width="10" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" height="42" alt="kubernetes logo" />
-  <img width="10" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" height="42" alt="linux logo" />
-  <img width="10" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-line-wordmark.svg" height="42" alt="amazonwebservices logo" />
-  <img width="10" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="42" alt="git logo" />
-  <img width="10" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" height="42" alt="mongodb logo" />
-  <img width="10" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" height="42" alt="postgresql logo" />
-  <img width="10" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" height="42" alt="redis logo" />
+  <img src="https://skillicons.dev/icons?i=java,spring,postgres,redis,kafka,rabbitmq,docker,kubernetes,aws,githubactions,linux,git,ts,js,react,nextjs,nodejs,python&perline=9" />
 </div>
+
+
+## Connect
+
+[LinkedIn](https://www.linkedin.com/in/shvmpk/) · [GitHub](https://github.com/shvmpk)
+
 
 <h3 align="left">📌 Pinned Repos</h3>
 
