@@ -185,21 +185,12 @@ My interests include distributed systems, API design, asynchronous processing, d
       <a href="https://github.com/kumarianjali31">kumarianjali31</a>
     </td>
     <td align="center">
-      <a href="https://github.com/Sypher0Dronzer">
-        <img src="https://avatars2.githubusercontent.com/u/83546205" width="100px;" alt="Sypher0Dronzer"/>
-      </a>
-      <br />
-      <a href="https://github.com/Sypher0Dronzer">Soham Saha</a>
-    </td>
-    <td align="center">
       <a href="https://github.com/sagarscaminosoftai">
         <img src="https://avatars2.githubusercontent.com/u/125298459" width="100px;" alt="sagarscaminosoftai"/>
       </a>
       <br />
       <a href="https://github.com/sagarscaminosoftai">sagar sharma</a>
     </td>
-  </tr>
-  <tr>
     <td align="center">
       <a href="https://github.com/samruddhibaviskar11">
         <img src="https://avatars2.githubusercontent.com/u/79337465" width="100px;" alt="samruddhibaviskar11"/>
@@ -207,12 +198,28 @@ My interests include distributed systems, API design, asynchronous processing, d
       <br />
       <a href="https://github.com/samruddhibaviskar11">Samruddhi Baviskar</a>
     </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/Sypher0Dronzer">
+        <img src="https://avatars2.githubusercontent.com/u/83546205" width="100px;" alt="Sypher0Dronzer"/>
+      </a>
+      <br />
+      <a href="https://github.com/Sypher0Dronzer">Soham Saha</a>
+    </td>
     <td align="center">
       <a href="https://github.com/gsiddhi04">
         <img src="https://avatars2.githubusercontent.com/u/155354417" width="100px;" alt="gsiddhi04"/>
       </a>
       <br />
       <a href="https://github.com/gsiddhi04">gsiddhi04</a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/beemybold">
+        <img src="https://avatars2.githubusercontent.com/u/84565969" width="100px;" alt="beemybold"/>
+      </a>
+      <br />
+      <a href="https://github.com/beemybold">Bernado Myrtil</a>
     </td>
     <td align="center">
       <a href="https://github.com/Acharaya">
