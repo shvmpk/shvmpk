@@ -150,18 +150,18 @@ My interests include distributed systems, API design, asynchronous processing, d
   </tr>
   <tr>
     <td align="center">
-      <a href="https://github.com/rj-rishav">
-        <img src="https://avatars2.githubusercontent.com/u/58115693" width="100px;" alt="rj-rishav"/>
-      </a>
-      <br />
-      <a href="https://github.com/rj-rishav">rj-rishav</a>
-    </td>
-    <td align="center">
       <a href="https://github.com/Brigoliboon">
         <img src="https://avatars2.githubusercontent.com/u/95647084" width="100px;" alt="Brigoliboon"/>
       </a>
       <br />
       <a href="https://github.com/Brigoliboon">Brigoliboon</a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/rj-rishav">
+        <img src="https://avatars2.githubusercontent.com/u/58115693" width="100px;" alt="rj-rishav"/>
+      </a>
+      <br />
+      <a href="https://github.com/rj-rishav">rj-rishav</a>
     </td>
     <td align="center">
       <a href="https://github.com/OmTiwary">
@@ -201,13 +201,6 @@ My interests include distributed systems, API design, asynchronous processing, d
   </tr>
   <tr>
     <td align="center">
-      <a href="https://github.com/Sypher0Dronzer">
-        <img src="https://avatars2.githubusercontent.com/u/83546205" width="100px;" alt="Sypher0Dronzer"/>
-      </a>
-      <br />
-      <a href="https://github.com/Sypher0Dronzer">Soham Saha</a>
-    </td>
-    <td align="center">
       <a href="https://github.com/gsiddhi04">
         <img src="https://avatars2.githubusercontent.com/u/155354417" width="100px;" alt="gsiddhi04"/>
       </a>
@@ -215,11 +208,11 @@ My interests include distributed systems, API design, asynchronous processing, d
       <a href="https://github.com/gsiddhi04">gsiddhi04</a>
     </td>
     <td align="center">
-      <a href="https://github.com/beemybold">
-        <img src="https://avatars2.githubusercontent.com/u/84565969" width="100px;" alt="beemybold"/>
+      <a href="https://github.com/Sypher0Dronzer">
+        <img src="https://avatars2.githubusercontent.com/u/83546205" width="100px;" alt="Sypher0Dronzer"/>
       </a>
       <br />
-      <a href="https://github.com/beemybold">Bernado Myrtil</a>
+      <a href="https://github.com/Sypher0Dronzer">Soham Saha</a>
     </td>
     <td align="center">
       <a href="https://github.com/Acharaya">
