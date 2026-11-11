@@ -48,20 +48,6 @@ My interests include distributed systems, API design, asynchronous processing, d
 <table>
   <tr>
     <td align="center">
-      <a href="https://github.com/johnny-rice">
-        <img src="https://avatars2.githubusercontent.com/u/718718" width="100px;" alt="johnny-rice"/>
-      </a>
-      <br />
-      <a href="https://github.com/johnny-rice">Johnny Rice</a>
-    </td>
-    <td align="center">
-      <a href="https://github.com/helallao">
-        <img src="https://avatars2.githubusercontent.com/u/78656003" width="100px;" alt="helallao"/>
-      </a>
-      <br />
-      <a href="https://github.com/helallao">Ali Yaşar</a>
-    </td>
-    <td align="center">
       <a href="https://github.com/esin">
         <img src="https://avatars2.githubusercontent.com/u/69767" width="100px;" alt="esin"/>
       </a>
@@ -96,8 +82,6 @@ My interests include distributed systems, API design, asynchronous processing, d
       <br />
       <a href="https://github.com/rahman-O">Abdalrahman M.Mohhy</a>
     </td>
-  </tr>
-  <tr>
     <td align="center">
       <a href="https://github.com/AbdoXCode">
         <img src="https://avatars2.githubusercontent.com/u/195650454" width="100px;" alt="AbdoXCode"/>
@@ -111,6 +95,15 @@ My interests include distributed systems, API design, asynchronous processing, d
       </a>
       <br />
       <a href="https://github.com/David-Horjet">David Horjet</a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/johnny-rice">
+        <img src="https://avatars2.githubusercontent.com/u/718718" width="100px;" alt="johnny-rice"/>
+      </a>
+      <br />
+      <a href="https://github.com/johnny-rice">Johnny Rice</a>
     </td>
     <td align="center">
       <a href="https://github.com/samrahimi">
@@ -147,8 +140,6 @@ My interests include distributed systems, API design, asynchronous processing, d
       <br />
       <a href="https://github.com/decoder-17">Tanupam Saha</a>
     </td>
-  </tr>
-  <tr>
     <td align="center">
       <a href="https://github.com/Brigoliboon">
         <img src="https://avatars2.githubusercontent.com/u/95647084" width="100px;" alt="Brigoliboon"/>
@@ -156,6 +147,8 @@ My interests include distributed systems, API design, asynchronous processing, d
       <br />
       <a href="https://github.com/Brigoliboon">Brigoliboon</a>
     </td>
+  </tr>
+  <tr>
     <td align="center">
       <a href="https://github.com/rj-rishav">
         <img src="https://avatars2.githubusercontent.com/u/58115693" width="100px;" alt="rj-rishav"/>
@@ -198,8 +191,6 @@ My interests include distributed systems, API design, asynchronous processing, d
       <br />
       <a href="https://github.com/samruddhibaviskar11">Samruddhi Baviskar</a>
     </td>
-  </tr>
-  <tr>
     <td align="center">
       <a href="https://github.com/gsiddhi04">
         <img src="https://avatars2.githubusercontent.com/u/155354417" width="100px;" alt="gsiddhi04"/>
@@ -207,6 +198,8 @@ My interests include distributed systems, API design, asynchronous processing, d
       <br />
       <a href="https://github.com/gsiddhi04">gsiddhi04</a>
     </td>
+  </tr>
+  <tr>
     <td align="center">
       <a href="https://github.com/Sypher0Dronzer">
         <img src="https://avatars2.githubusercontent.com/u/83546205" width="100px;" alt="Sypher0Dronzer"/>
