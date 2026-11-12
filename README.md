@@ -201,6 +201,13 @@ My interests include distributed systems, API design, asynchronous processing, d
   </tr>
   <tr>
     <td align="center">
+      <a href="https://github.com/beemybold">
+        <img src="https://avatars2.githubusercontent.com/u/84565969" width="100px;" alt="beemybold"/>
+      </a>
+      <br />
+      <a href="https://github.com/beemybold">Bernado Myrtil</a>
+    </td>
+    <td align="center">
       <a href="https://github.com/Sypher0Dronzer">
         <img src="https://avatars2.githubusercontent.com/u/83546205" width="100px;" alt="Sypher0Dronzer"/>
       </a>
