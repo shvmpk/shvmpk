@@ -178,18 +178,18 @@ My interests include distributed systems, API design, asynchronous processing, d
       <a href="https://github.com/kumarianjali31">kumarianjali31</a>
     </td>
     <td align="center">
-      <a href="https://github.com/sagarscaminosoftai">
-        <img src="https://avatars2.githubusercontent.com/u/125298459" width="100px;" alt="sagarscaminosoftai"/>
-      </a>
-      <br />
-      <a href="https://github.com/sagarscaminosoftai">sagar sharma</a>
-    </td>
-    <td align="center">
       <a href="https://github.com/samruddhibaviskar11">
         <img src="https://avatars2.githubusercontent.com/u/79337465" width="100px;" alt="samruddhibaviskar11"/>
       </a>
       <br />
       <a href="https://github.com/samruddhibaviskar11">Samruddhi Baviskar</a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/sagarscaminosoftai">
+        <img src="https://avatars2.githubusercontent.com/u/125298459" width="100px;" alt="sagarscaminosoftai"/>
+      </a>
+      <br />
+      <a href="https://github.com/sagarscaminosoftai">sagar sharma</a>
     </td>
     <td align="center">
       <a href="https://github.com/gsiddhi04">
