@@ -120,13 +120,6 @@ My interests include distributed systems, API design, asynchronous processing, d
       <a href="https://github.com/zlr-raja">Rajashekhar</a>
     </td>
     <td align="center">
-      <a href="https://github.com/Ritam-jash">
-        <img src="https://avatars2.githubusercontent.com/u/162781852" width="100px;" alt="Ritam-jash"/>
-      </a>
-      <br />
-      <a href="https://github.com/Ritam-jash">Ritam Jash</a>
-    </td>
-    <td align="center">
       <a href="https://github.com/nirajpd">
         <img src="https://avatars2.githubusercontent.com/u/10123597" width="100px;" alt="nirajpd"/>
       </a>
@@ -147,8 +140,6 @@ My interests include distributed systems, API design, asynchronous processing, d
       <br />
       <a href="https://github.com/Brigoliboon">Brigoliboon</a>
     </td>
-  </tr>
-  <tr>
     <td align="center">
       <a href="https://github.com/rj-rishav">
         <img src="https://avatars2.githubusercontent.com/u/58115693" width="100px;" alt="rj-rishav"/>
@@ -156,6 +147,8 @@ My interests include distributed systems, API design, asynchronous processing, d
       <br />
       <a href="https://github.com/rj-rishav">rj-rishav</a>
     </td>
+  </tr>
+  <tr>
     <td align="center">
       <a href="https://github.com/OmTiwary">
         <img src="https://avatars2.githubusercontent.com/u/143310925" width="100px;" alt="OmTiwary"/>
@@ -198,8 +191,6 @@ My interests include distributed systems, API design, asynchronous processing, d
       <br />
       <a href="https://github.com/gsiddhi04">gsiddhi04</a>
     </td>
-  </tr>
-  <tr>
     <td align="center">
       <a href="https://github.com/beemybold">
         <img src="https://avatars2.githubusercontent.com/u/84565969" width="100px;" alt="beemybold"/>
@@ -207,6 +198,8 @@ My interests include distributed systems, API design, asynchronous processing, d
       <br />
       <a href="https://github.com/beemybold">Bernado Myrtil</a>
     </td>
+  </tr>
+  <tr>
     <td align="center">
       <a href="https://github.com/Sypher0Dronzer">
         <img src="https://avatars2.githubusercontent.com/u/83546205" width="100px;" alt="Sypher0Dronzer"/>
