@@ -192,21 +192,14 @@ My interests include distributed systems, API design, asynchronous processing, d
       <a href="https://github.com/gsiddhi04">gsiddhi04</a>
     </td>
     <td align="center">
-      <a href="https://github.com/beemybold">
-        <img src="https://avatars2.githubusercontent.com/u/84565969" width="100px;" alt="beemybold"/>
-      </a>
-      <br />
-      <a href="https://github.com/beemybold">Bernado Myrtil</a>
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
       <a href="https://github.com/Sypher0Dronzer">
         <img src="https://avatars2.githubusercontent.com/u/83546205" width="100px;" alt="Sypher0Dronzer"/>
       </a>
       <br />
       <a href="https://github.com/Sypher0Dronzer">Soham Saha</a>
     </td>
+  </tr>
+  <tr>
     <td align="center">
       <a href="https://github.com/Acharaya">
         <img src="https://avatars2.githubusercontent.com/u/112647523" width="100px;" alt="Acharaya"/>
