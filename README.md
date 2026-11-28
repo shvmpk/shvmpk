@@ -25,13 +25,16 @@ My interests include distributed systems, API design, asynchronous processing, d
 
 | Repository | Description |
 | :--- | :--- |
+| **[shvmpk/stock-ledger](https://github.com/shvmpk/stock-ledger)** | A focused inventory & order ledger for small e-commerce sellers — atomic stock reservations that make overselling impossible, supplier receiving, packing & carrier dispatch. Spring Boot 4 · Java 21 · PostgreSQL · React 19 · Testcontainers. |
 | **[shvmpk/url-shortener](https://github.com/shvmpk/url-shortener)** | An advanced, production-grade URL shortening service built for internet-scale systems. Designed with scalability, observability, and extensibility in mind — yet still under active development with new features being added regularly. |
 | **[shvmpk/linkedin-ai-composer](https://github.com/shvmpk/linkedin-ai-composer)** | A privacy-first Chrome extension that generates LinkedIn posts in your own voice using your own AI provider — cloud or local. No backend, no subscription, no data leaves your browser |
-| **[shvmpk/github-contributor-bot](https://github.com/shvmpk/github-contributor-bot)** | 🤖 A high-performance, zero-dependency Go-based bot that fully automates a realistic GitHub commits with human-like behavior — random times, realistic messages, rest days, sprint days, and branch simulations. Runs fully automated via GitHub Actions. No Node.js or Python required. |
 | **[shvmpk/spring-ai-local-rag](https://github.com/shvmpk/spring-ai-local-rag)** | Document Search & Insights Platform (Local AI Chat + Document ETL + Model Management Platform) |
+| **[shvmpk/patient-management-microservices](https://github.com/shvmpk/patient-management-microservices)** | Patient Management with Springboot, Micro service architecture with gRPC, Kafka and Docker for Infrastructure  |
 | **[shvmpk/next-hire-ai](https://github.com/shvmpk/next-hire-ai)** | Seamless and intuitive experience for job seekers and recruiters to analyze resumes (CVs) based on job descriptions. |
 | **[shvmpk/tvflix](https://github.com/shvmpk/tvflix)** | Tvflix is a simple and responsive web app built using Vanilla JS, leveraging the power of Postman and the TMDB API to seamlessly fetch and display comprehensive movie details. This project serves as a template for larger applications. |
 | **[shvmpk/SayGPT](https://github.com/shvmpk/SayGPT)** | Full stack AI-Chat GPT Clone, Uses Gemini to get query and image responses. Minimalistic Responsive UI with Full authentication and User Secure. |
+| **[shvmpk/note-doodle](https://github.com/shvmpk/note-doodle)** | Note Doodle is a full stack web app, similar to Eraser.io. User can login, create teams, files, save them, export them. Fully secured routes. Build using Convex, Nextjs, Tailwind, Shadcn, TS and Kinde Auth |
+| **[shvmpk/journo](https://github.com/shvmpk/journo)** | A command-line diary program in C++ that lets you create, view, and manage diary entries with password protection. Easily document your thoughts, ideas, and memories. |
 
 <!-- PINNED-REPOS:END -->
 
